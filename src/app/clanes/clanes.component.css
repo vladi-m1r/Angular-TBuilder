@@ -1,0 +1,48 @@
+.MULTI-BAR-addButton:hover{
+    background-color: rgb(49, 19, 44);
+    cursor: pointer;
+}
+
+.MULTI-BAR-addButton{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 6.5px;
+    text-align: center;
+    font-size: 13.5px;
+}
+
+
+.image-friend{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: auto;
+    height: 28px;
+}
+
+.MULTI-BAR-clan{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 6.5px;
+    font-family: 'Barlow', sans-serif;
+    padding-left: 20px;
+    color: rgb(47, 255, 134);
+}
+
+.MULTI-BAR-clan:hover{
+    background-color: rgb(51, 63, 55);
+    cursor: pointer;
+}
+
+.image-clan{
+    border-radius: 25%;
+    margin-right: 15px;
+    width: auto;
+    height: 28px;
+}

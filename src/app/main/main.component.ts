@@ -75,4 +75,10 @@ export class MainComponent implements OnInit {
     this.isShowTeams = !this.isShowTeams;
   }
 
+  public isShowClans = false;
+
+  showClans(){
+    console.log("Mostrando clanes");
+    this.isShowClans = !this.isShowClans;
+  }
 }

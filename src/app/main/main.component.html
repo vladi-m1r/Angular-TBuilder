@@ -46,33 +46,9 @@
         <div class="generic-component" [class.active]="isShowTeams">
             <app-equipos></app-equipos>
         </div>
-        <li class="TB-bar" id="boton-clanes">Clanes</li>
-        <div class="TB-MULTI-BAR" id="bar-clanes">
-            <div class="MULTI-BAR-addButton">
-                <img class="image-friend" height="30" width="auto"
-                    src="https://flaticons.net/icon.php?slug_category=application&slug_icon=group-add" alt="">
-                Nuevo Clan
-            </div>
-            <div class="MULTI-BAR-clan">
-                <img class="image-clan" height="30" width="auto"
-                    src="https://pbs.twimg.com/profile_images/667794242014568449/U4E_UnyC_400x400.png" alt="">
-                CSGO
-            </div>
-            <div class="MULTI-BAR-clan">
-                <img class="image-clan" height="30" width="auto"
-                    src="https://pbs.twimg.com/profile_images/667794242014568449/U4E_UnyC_400x400.png" alt="">
-                NAVI
-            </div>
-            <div class="MULTI-BAR-clan">
-                <img class="image-clan" height="30" width="auto"
-                    src="https://pbs.twimg.com/profile_images/667794242014568449/U4E_UnyC_400x400.png" alt="">
-                ALLI
-            </div>
-            <div class="MULTI-BAR-clan">
-                <img class="image-clan" height="30" width="auto"
-                    src="https://pbs.twimg.com/profile_images/667794242014568449/U4E_UnyC_400x400.png" alt="">
-                DUID
-            </div>
+        <li class="TB-bar" id="boton-clanes" (click)="showClans()">Clanes</li>
+        <div class="generic-component" [class.active]="isShowClans">
+            <app-clanes></app-clanes>
         </div>
         <li class="TB-bar" id="boton-amigo" (click)="ocultarAmigos()">Amigos</li>
         <!--Si se aplica directamente sobre el modulo no trabaja muy bien-->
