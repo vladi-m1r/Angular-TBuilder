@@ -44,7 +44,7 @@
         <li class="status">Connected</li>
         <li class="TB-bar" id="boton-equipos" (click)="showTeams()">Equipos</li>
         <div class="generic-component" [class.active]="isShowTeams">
-            <app-equipos></app-equipos>
+            <app-equipos (response)="changeComponentView($event)"></app-equipos>
         </div>
         <li class="TB-bar" id="boton-clanes" (click)="showClans()">Clanes</li>
         <div class="generic-component" [class.active]="isShowClans">
@@ -61,6 +61,7 @@
     <div class="TB-MAIN-COMPONENT" [ngSwitch]="selectedComponent">
         <app-home *ngSwitchCase="'Home'"></app-home>
         <app-chat *ngSwitchCase="'Chat'"></app-chat>
+        <app-create-team *ngSwitchCase="'CreateTeam'"></app-create-team>
     </div>
     <div class="profile-config" [class.active]="isShow">
         <li>
