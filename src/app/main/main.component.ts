@@ -68,4 +68,11 @@ export class MainComponent implements OnInit {
     console.log(data);
   }
 
+  public isShowTeams = false;
+
+  showTeams(){
+    console.log("Mostrando equipos");
+    this.isShowTeams = !this.isShowTeams;
+  }
+
 }

@@ -42,13 +42,9 @@
     <div class="TB-Slide-friends">
         <li class="TB-bar">Estado</li>
         <li class="status">Connected</li>
-        <li class="TB-bar" id="boton-equipos">Equipos</li>
-        <div class="TB-MULTI-BAR" id="bar-equipos">
-            <div class="MULTI-BAR-addButton">
-                <img class="image-friend" height="30" width="auto"
-                    src="https://flaticons.net/icon.php?slug_category=application&slug_icon=group-add" alt="">
-                Nuevo Equipo
-            </div>
+        <li class="TB-bar" id="boton-equipos" (click)="showTeams()">Equipos</li>
+        <div class="generic-component" [class.active]="isShowTeams">
+            <app-equipos></app-equipos>
         </div>
         <li class="TB-bar" id="boton-clanes">Clanes</li>
         <div class="TB-MULTI-BAR" id="bar-clanes">
@@ -79,7 +75,7 @@
             </div>
         </div>
         <li class="TB-bar" id="boton-amigo" (click)="ocultarAmigos()">Amigos</li>
-        <!--Si se aplica directamente sobre el moduo no trabaja muy bien-->
+        <!--Si se aplica directamente sobre el modulo no trabaja muy bien-->
         <div class="generic-component" [class.active]="showAmigos">
             <app-amigos (selectedFriend)="testEvent($event)"></app-amigos>
         </div>
