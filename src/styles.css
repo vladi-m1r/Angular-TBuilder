@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --tb-first-color: rgba(28, 12, 51, 1);;
+    --tb-second-color: rgb(15, 5, 28);
+    --tb-third-color: brown;
+}
+
+
+body{
+    box-shadow: inset 0px 0px 150px 150px rgba(0, 0, 0, 0.9);
+    margin: 0px;
+    background-image: url("https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt8aed4bd15844d3d9/5dbb292d24642a3b8da56e1b/Ardenweald_Postcard.jpg?auto=webp&quality=75");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-color: black;
+}
+
+html{
+    background-image: url("https://images.blz-contentstack.com/v3/assets/blt3452e3b114fab0cd/blt8aed4bd15844d3d9/5dbb292d24642a3b8da56e1b/Ardenweald_Postcard.jpg?auto=webp&quality=75");
+}
