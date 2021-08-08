@@ -14,6 +14,7 @@ import { ChatComponent } from './chat/chat.component';
 import { AmigosComponent } from './amigos/amigos.component';
 import { EquiposComponent } from './equipos/equipos.component';
 import { ClanesComponent } from './clanes/clanes.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   { path: 'mainApp', component: MainComponent, canActivate: [AuthGuard]},
@@ -30,7 +31,8 @@ const routes: Routes = [
     ChatComponent,
     AmigosComponent,
     EquiposComponent,
-    ClanesComponent
+    ClanesComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

@@ -81,4 +81,10 @@ export class MainComponent implements OnInit {
     console.log("Mostrando clanes");
     this.isShowClans = !this.isShowClans;
   }
+
+  selectedComponent:string = "Home";
+
+  changeComponentView(data:string){
+    this.selectedComponent = data;
+  }
 }

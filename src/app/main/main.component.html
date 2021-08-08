@@ -59,7 +59,11 @@
     </div>
 
     <div class="TB-MAIN-COMPONENT">
-        <app-chat></app-chat>
+        <div [ngSwitch]="selectedComponent">
+            <li *ngSwitchCase="'Home'"><app-home></app-home>
+            <li *ngSwitchCase="'B'">  <app-chat></app-chat>
+            <li *ngSwitchDefault="'Home'"><app-home></app-home>
+          </div>
     </div>
     <div class="profile-config" [class.active]="isShow">
         <li>
