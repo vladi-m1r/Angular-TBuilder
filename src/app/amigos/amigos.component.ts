@@ -8,7 +8,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 export class AmigosComponent implements OnInit {
 
   @Output() selectedFriend = new EventEmitter<any>();
-  
+  @Output() changeToChat = new EventEmitter<string>();
+
   private friend:any;
 
   constructor() { }
@@ -21,7 +22,7 @@ export class AmigosComponent implements OnInit {
   }
 
   clickFriend(){
-    this.selectedFriend.emit(this.friend);
+    this.changeToChat.emit("Chat");    
   }
 
 }

@@ -4,7 +4,7 @@
             <img width="auto" height="45"
                 src="https://esports.as.com/2020/01/27/G2_Esportslogo_square.png?hash=0fa5532caa9899d8f151aaad2783b2416fb57a42"
                 alt="">
-            <li>HOME</li>
+            <li (click)="clickHome()">HOME</li>
             <li>JUEGOS</li>
             <li>EQUIPOS</li>
             <li>CLANES</li>
@@ -53,17 +53,14 @@
         <li class="TB-bar" id="boton-amigo" (click)="ocultarAmigos()">Amigos</li>
         <!--Si se aplica directamente sobre el modulo no trabaja muy bien-->
         <div class="generic-component" [class.active]="showAmigos">
-            <app-amigos (selectedFriend)="testEvent($event)"></app-amigos>
+            <app-amigos (changeToChat)="changeComponentView($event)"></app-amigos>
         </div>
         <li class="TB-bar">...</li>
     </div>
 
-    <div class="TB-MAIN-COMPONENT">
-        <div [ngSwitch]="selectedComponent">
-            <li *ngSwitchCase="'Home'"><app-home></app-home>
-            <li *ngSwitchCase="'B'">  <app-chat></app-chat>
-            <li *ngSwitchDefault="'Home'"><app-home></app-home>
-          </div>
+    <div class="TB-MAIN-COMPONENT" [ngSwitch]="selectedComponent">
+        <app-home *ngSwitchCase="'Home'"></app-home>
+        <app-chat *ngSwitchCase="'Chat'"></app-chat>
     </div>
     <div class="profile-config" [class.active]="isShow">
         <li>

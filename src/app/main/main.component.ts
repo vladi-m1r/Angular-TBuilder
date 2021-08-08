@@ -87,4 +87,8 @@ export class MainComponent implements OnInit {
   changeComponentView(data:string){
     this.selectedComponent = data;
   }
+
+  clickHome(){
+    this.selectedComponent = "Home";
+  }
 }
