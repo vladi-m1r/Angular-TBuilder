@@ -1,0 +1,205 @@
+
+.TB-Slide-friends{
+    color: white;
+    width: 220px;
+    float: right;
+    font-family: 'Abel', sans-serif;
+    position: fixed;
+    right: 0;
+    top: 67px;
+    bottom: 0px;
+    background-color: var(--tb-second-color);
+    border-left: 1px solid rgb(61, 50, 50);
+    overflow: auto;
+}
+
+.TB-Slide-friends .TB-bar{
+    background-color: var(--tb-first-color);
+    list-style: none;
+    display: block;
+    padding: 11px;
+    border-bottom: 1px solid rgb(61, 50, 50);
+    text-align: center;
+    font-size: 14px;
+}
+
+.TB-Slide-friends .TB-bar:hover{
+    cursor: pointer;
+    background-color: rgb(82, 124, 13);
+}
+
+
+.TB-Slide-friends::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.TB-Slide-friends::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.TB-Slide-friends::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.TB-Slide-friends::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.TB-Slide-friends::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.TB-Slide-friends::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}
+
+.status{
+    color: rgb(37, 221, 37);
+    background-color: rgb(11, 1, 29);
+    border-bottom: 1px solid rgb(61, 50, 50);
+    text-align: center;
+    padding: 5px;
+}
+
+.TB-bar-friends{
+    overflow: auto;
+    max-height: 230px;
+    font-size: 13px;
+    transition: all 0.4s ease;
+}
+
+.TB-bar-friends.active{
+    max-height: 0;
+}
+
+.TB-bar-friend{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 6.5px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+
+.TB-bar-friend:hover{
+    background-color: rgb(55, 43, 43);
+    cursor: pointer;
+}
+
+
+.TB-bar-friend:hover img{
+    border-radius: 35%;
+    transition: 0.3s;
+}
+
+.TB-bar-friends::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.TB-bar-friends::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.TB-bar-friends::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.TB-bar-friends::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.TB-bar-friends::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.TB-bar-friends::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}
+
+.image-friend{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: auto;
+    height: 28px;
+}
+
+.circleStatus{
+    left: 20px;
+    bottom: -2px;
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: rgb(95, 148, 15);
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: rgb(41, 39, 39);
+}
+
+.prof-container{
+    position: relative;
+    display: inline-block;
+}
+
+/*BARRA MULTIUSO
+*/
+
+.TB-MULTI-BAR{
+    overflow: auto;
+    max-height: 0;
+    transition: all 0.4s ease;
+}
+
+.TB-MULTI-BAR.active{
+    max-height: 230px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.TB-MULTI-BAR::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}
+
+.MULTI-BAR-addButton:hover{
+    background-color: rgb(49, 19, 44);
+    cursor: pointer;
+}
+
+.MULTI-BAR-addButton{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 6.5px;
+    text-align: center;
+    font-size: 13.5px;
+}

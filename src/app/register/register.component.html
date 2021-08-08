@@ -1,0 +1,24 @@
+<div class="register-block">
+    <div class="register">
+        <h2>Crear cuenta</h2>
+        <label for="">NOMBRE</label>
+        <input type="text" [(ngModel)]="usuario.first_name">
+        <label for="">APELLIDO</label>
+        <input type="text" [(ngModel)]="usuario.last_name">
+        <label for="">EMAIL</label>
+        <input type="email" [(ngModel)]="usuario.email">
+        <label for="">USUARIO</label>
+        <input type="text" [(ngModel)]="usuario.username">
+        <label for="">CONTRASEÑA</label>
+        <input type="password" [(ngModel)]="usuario.password">
+        <label for="">CONFIRMAR CONTRASEÑA</label>
+        <input type="password" [(ngModel)]="usuario.password1">
+        <div class="register-minicomp">
+            <label for="">FECHA DE NACIMIENTO</label>
+            <input type="text" [(ngModel)]="usuario.birthday">
+            <label for="">GENERO</label>
+            <input type="text" [(ngModel)]="usuario.gender">
+        </div>
+        <button (click)="register()" type="submit">Registrar</button>
+    </div>
+</div>

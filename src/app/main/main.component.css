@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+.teamBuild-duplex{
+    display: flex;
+    color: white;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.teamBuild-center{
+    padding-top: 100px;
+    padding-right: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.tB-fComponent{
+    border-radius: 10px;
+}
+
+.TB-nav-purple{
+    background-color: var(--tb-first-color);
+    padding: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Comfortaa', cursive;
+    border-bottom: 2px solid rgb(61, 50, 50);
+}
+
+.TB-nav-purple li, h1{
+    list-style: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.TB-nav-purple h1{
+    color: white;
+    font-size: 25px;
+}
+
+.TB-nav-left{
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.TB-nav-right{
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+.TB-nav-purple li:hover{
+    cursor: pointer;
+    color: rgb(166, 178, 182);
+}
+
+.profile img{
+    border-radius: 50%;
+}
+
+.profile{
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    color: rgb(151, 214, 48);
+    margin-right: 15px;
+}
+
+.especial{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.espcial p{
+    display: inline;
+}
+
+
+.TB-nav-right svg{
+    width: 22px;
+    height: auto;
+    margin-left: 35px;
+    fill: rgb(196, 182, 204);
+}
+
+.TB-nav-right svg:hover{
+    cursor: pointer;
+}
+
+.TB-Slide-right{
+    color: white;
+    width: 175px;
+    float: right;
+    overflow: hidden;
+    font-family: 'Abel', sans-serif;
+}
+
+.TB-Slide-right li{
+    list-style: none;
+    display: none;
+    padding: 15px;
+    border-bottom: 4px double rgb(61, 50, 50);
+    border-left: 4px double rgb(61, 50, 50);
+    text-align: center;
+}
+
+.TB-Slide-right li:hover{
+    cursor: pointer;
+    background-color: rgb(82, 124, 13);
+}
+
+.TB-Slide-friends{
+    color: white;
+    width: 220px;
+    float: right;
+    font-family: 'Abel', sans-serif;
+    position: fixed;
+    right: 0;
+    top: 67px;
+    bottom: 0px;
+    background-color: var(--tb-second-color);
+    border-left: 1px solid rgb(61, 50, 50);
+    overflow: auto;
+}
+
+.TB-Slide-friends .TB-bar{
+    background-color: var(--tb-first-color);
+    list-style: none;
+    display: block;
+    padding: 11px;
+    border-bottom: 1px solid rgb(61, 50, 50);
+    text-align: center;
+    font-size: 14px;
+}
+
+.TB-Slide-friends .TB-bar:hover{
+    cursor: pointer;
+    background-color: rgb(82, 124, 13);
+}
+
+
+.TB-Slide-friends::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.TB-Slide-friends::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.TB-Slide-friends::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.TB-Slide-friends::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.TB-Slide-friends::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.TB-Slide-friends::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}
+
+
+.TB-Widget{
+    position: fixed;
+    width: 100%;
+}
+
+.status{
+    color: rgb(37, 221, 37);
+    background-color: rgb(11, 1, 29);
+    border-bottom: 1px solid rgb(61, 50, 50);
+    text-align: center;
+    padding: 5px;
+}
+
+.TB-bar-friends{
+    overflow: auto;
+    max-height: 230px;
+    font-size: 13px;
+    transition: all 0.4s ease;
+}
+
+.TB-bar-friends.active{
+    max-height: 0;
+}
+
+.TB-bar-friend{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 6.5px;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+
+
+.TB-bar-friend:hover{
+    background-color: rgb(55, 43, 43);
+    cursor: pointer;
+}
+
+
+.TB-bar-friend:hover img{
+    border-radius: 35%;
+    transition: 0.3s;
+}
+
+.TB-bar-friends::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.TB-bar-friends::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.TB-bar-friends::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.TB-bar-friends::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.TB-bar-friends::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.TB-bar-friends::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}
+
+/*BARRA MULTIUSO
+*/
+
+.TB-MULTI-BAR{
+    overflow: auto;
+    max-height: 0;
+    transition: all 0.4s ease;
+}
+
+.TB-MULTI-BAR.active{
+    max-height: 230px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.TB-MULTI-BAR::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.TB-MULTI-BAR::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}
+
+/* END
+*/
+.circleStatus{
+    left: 20px;
+    bottom: -2px;
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: rgb(95, 148, 15);
+    border-style: solid;
+    border-width: 2.5px;
+    border-color: rgb(41, 39, 39);
+}
+
+.image-friend{
+    border-radius: 50%;
+    margin-right: 15px;
+    width: auto;
+    height: 28px;
+}
+
+.prof-container{
+    position: relative;
+    display: inline-block;
+}
+
+/* TB MAIN COMPONENT - AQUI SUCEDE TODO LOS CAMBIOS
+*/
+
+.TB-MAIN-COMPONENT{
+    position: fixed;
+    bottom: 0;
+    background-color: red;
+    top: 68px;
+    right: 221px;
+    left: 0px;
+    background-color: rgba(15, 5, 28, 0.90);
+    overflow: auto;
+    color: rgb(230, 210, 210);
+}
+
+.TB-MAIN-COMPONENT::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.TB-MAIN-COMPONENT::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.TB-MAIN-COMPONENT::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.TB-MAIN-COMPONENT::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.TB-MAIN-COMPONENT::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.TB-MAIN-COMPONENT::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}
+
+
+
+
+.generic-component{
+    overflow: auto;
+    max-height: 0;
+    font-size: 13px;
+    transition: all 0.4s ease;
+}
+
+.generic-component.active{
+    max-height: 200px;
+}
+
+.generic-component::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.generic-component::-webkit-scrollbar-thumb {
+    background-color: #176b1b;
+    border-radius: 3px;
+    border: 1px solid #000000;
+    height: 3px;
+}
+
+.generic-component::-webkit-scrollbar:vertical {
+    width: 5px;
+}
+
+.generic-component::-webkit-scrollbar:horizontal {
+    height: 5px;
+}
+
+.generic-component::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+.generic-component::-webkit-scrollbar-track-piece {
+    margin-bottom: 10px; 
+}

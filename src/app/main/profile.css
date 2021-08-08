@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
+.MULTI-BAR-clan{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 6.5px;
+    font-family: 'Barlow', sans-serif;
+    padding-left: 20px;
+    color: rgb(47, 255, 134);
+}
+
+.MULTI-BAR-clan:hover{
+    background-color: rgb(51, 63, 55);
+    cursor: pointer;
+}
+
+.image-clan{
+    border-radius: 25%;
+    margin-right: 15px;
+    width: auto;
+    height: 28px;
+}
+
+.MULTI-BAR-addButton:hover{
+    background-color: rgb(49, 19, 44);
+    cursor: pointer;
+}
+
+.MULTI-BAR-addButton{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 6.5px;
+    text-align: center;
+    font-size: 13.5px;
+}
+
+.profile-config{
+    display: flex;
+    color: black;
+    position: fixed;
+    right: 15px;
+    top: 70px;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0px;
+    border-top: 0px;
+    border-color: rgb(80, 75, 75);
+    overflow: hidden;
+    transition: all 0.4s ease;
+    max-height: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+.profile-config li{
+    padding: 5px;
+    padding-left: 30px;
+    padding-right: 95px;
+    list-style: none;
+    color: white;
+    background-color: rgb(24, 14, 39);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.profile-config li:hover{
+    background-color: rgb(45, 27, 73);
+    cursor: pointer;
+}
+
+.profile-config li svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+}
+
+.profile-config.active{
+    border-width: 1px;
+    max-height: 200px;
+}
