@@ -146,7 +146,7 @@ img:hover{
 
 .TB-Slide-friends{
     color: white;
-    width: 220px;
+    width: 250px;
     float: right;
     font-family: 'Abel', sans-serif;
     position: fixed;
@@ -348,10 +348,10 @@ img:hover{
     bottom: 0;
     background-color: red;
     top: 68px;
-    right: 221px;
+    right: 251px;
     left: 0px;
     background-color: rgba(15, 5, 28, 0.90);
-    overflow: auto;
+    overflow: hidden;
     color: rgb(230, 210, 210);
 }
 
@@ -380,9 +380,6 @@ img:hover{
 .TB-MAIN-COMPONENT::-webkit-scrollbar-track-piece {
     margin-bottom: 10px; 
 }
-
-
-
 
 .generic-component{
     overflow: auto;

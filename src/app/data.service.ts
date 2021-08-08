@@ -24,4 +24,9 @@ export class DataService {
   loginWithToken(token:any): Observable<any>{
     return this.http.post(this.baseUrl + 'cuentas/verifyToken/', token, {headers: this.httpHeaders});
   }
+
+  getTeams(userID:number):Observable<any>{
+    return this.http.post(this.baseUrl + 'cuentas/verifyToken/', userID, {headers: this.httpHeaders});
+  }
+
 }

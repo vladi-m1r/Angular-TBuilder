@@ -1,0 +1,107 @@
+.createTeam-Block{
+    display: flex;
+    flex-direction: column;
+    padding: 200px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+input{
+    padding-left: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 43px;
+    background-color: rgb(33, 17, 78);
+    border: solid rgb(28, 27, 27) 0.3px;
+    border-radius: 5px;
+    color: rgb(220, 212, 220);
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+input:focus{
+    outline: none;
+    border-color: rgb(64, 149, 224);
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(150, 138, 150); 
+    font-size: 12px;
+    font-weight: bold;
+}
+
+button{
+    background-color: rgb(42, 84, 210);
+    margin-top: 20px;
+    border-width: 0;
+    padding-top: 15px;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    color: white;
+    transition: 0.4s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(13, 52, 167);
+}
+
+h2{
+    text-align: center;
+}
+
+input.file{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.fileUpload {
+    color: white;
+    display: inline;
+    padding: 6px 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(66, 12, 141);
+}
+
+.custom-select select{
+    padding-left: 10px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    height: 43px;
+    background-color: rgb(33, 17, 78);
+    border: solid rgb(28, 27, 27) 0.3px;
+    border-radius: 5px;
+    color: rgb(220, 212, 220);
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+select:focus{
+    outline: none;
+    border-color: rgb(132, 64, 228);
+}
+
+option{
+    border-color: rgb(132, 64, 228);
+    outline: none;
+}
+
+option:hover{
+    outline: none;
+    color: tomato;
+}
+
