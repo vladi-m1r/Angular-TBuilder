@@ -25,8 +25,8 @@ export class DataService {
     return this.http.post(this.baseUrl + 'cuentas/verifyToken/', token, {headers: this.httpHeaders});
   }
 
-  getTeams(userID:number):Observable<any>{
-    return this.http.post(this.baseUrl + 'cuentas/verifyToken/', userID, {headers: this.httpHeaders});
+  getTeamsForProfile(profileID:number):Observable<any>{
+    return this.http.get(this.baseUrl + 'gameTeams/perfilesTeam/'+profileID+"/", {headers: this.httpHeaders});
   }
 
 }
