@@ -63,7 +63,7 @@
     padding-right: 95px;
     list-style: none;
     color: white;
-    background-color: rgb(24, 14, 39);
+    background-color: var(--tb-second-color);
     display: flex;
     align-content: center;
     align-items: center;

@@ -39,7 +39,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: 'Comfortaa', cursive;
-    border-bottom: 2px solid rgb(61, 50, 50);
+    border-bottom: 2px solid rgb(16, 15, 15);
 }
 
 .TB-nav-purple li, h1{
@@ -151,10 +151,10 @@ img:hover{
     font-family: 'Abel', sans-serif;
     position: fixed;
     right: 0;
-    top: 67px;
+    top: 71px;
     bottom: 0px;
     background-color: var(--tb-second-color);
-    border-left: 1px solid rgb(61, 50, 50);
+    border-left: 1px solid var(--tb-border-color);
     overflow: auto;
 }
 
@@ -163,7 +163,7 @@ img:hover{
     list-style: none;
     display: block;
     padding: 11px;
-    border-bottom: 1px solid rgb(61, 50, 50);
+    border-bottom: 1px solid var(--tb-border-color);
     text-align: center;
     font-size: 14px;
 }
@@ -175,25 +175,21 @@ img:hover{
 
 
 .TB-Slide-friends::-webkit-scrollbar {
-    -webkit-appearance: none;
+    background-color: var(--tb-bar-color);
+    width: 10px;
 }
+
 .TB-Slide-friends::-webkit-scrollbar-thumb {
-    background-color: #176b1b;
+    background-color: var(--tb-barBG-color);
     border-radius: 3px;
-    border: 1px solid #000000;
+    border: 1px solid #1c1010;
     height: 3px;
-}
-
-.TB-Slide-friends::-webkit-scrollbar:vertical {
-    width: 5px;
-}
-
-.TB-Slide-friends::-webkit-scrollbar:horizontal {
-    height: 5px;
+    width: 3px;
 }
 
 .TB-Slide-friends::-webkit-scrollbar-track {
-    border-radius: 10px;  
+    border-radius: 10px; 
+    width: 20px; 
 }
 
 .TB-Slide-friends::-webkit-scrollbar-track-piece {
@@ -249,10 +245,10 @@ img:hover{
 }
 
 .TB-bar-friends::-webkit-scrollbar {
-    -webkit-appearance: none;
+    background-color: var(--tb-bar-color);
 }
 .TB-bar-friends::-webkit-scrollbar-thumb {
-    background-color: #176b1b;
+    background-color: var(--tb-barBG-color);
     border-radius: 3px;
     border: 1px solid #000000;
     height: 3px;
@@ -347,38 +343,12 @@ img:hover{
     position: fixed;
     bottom: 0;
     background-color: red;
-    top: 68px;
-    right: 251px;
+    top: 71px;
+    right: 250px;
     left: 0px;
-    background-color: rgba(15, 5, 28, 0.90);
+    background-color: rgba(26, 26, 28, 0.95);
     overflow: hidden;
     color: rgb(230, 210, 210);
-}
-
-.TB-MAIN-COMPONENT::-webkit-scrollbar {
-    -webkit-appearance: none;
-}
-.TB-MAIN-COMPONENT::-webkit-scrollbar-thumb {
-    background-color: #176b1b;
-    border-radius: 3px;
-    border: 1px solid #000000;
-    height: 3px;
-}
-
-.TB-MAIN-COMPONENT::-webkit-scrollbar:vertical {
-    width: 5px;
-}
-
-.TB-MAIN-COMPONENT::-webkit-scrollbar:horizontal {
-    height: 5px;
-}
-
-.TB-MAIN-COMPONENT::-webkit-scrollbar-track {
-    border-radius: 10px;  
-}
-
-.TB-MAIN-COMPONENT::-webkit-scrollbar-track-piece {
-    margin-bottom: 10px; 
 }
 
 .generic-component{
@@ -393,21 +363,14 @@ img:hover{
 }
 
 .generic-component::-webkit-scrollbar {
-    -webkit-appearance: none;
+    background-color: var(--tb-bar-color);
+    width: 10px;
 }
 .generic-component::-webkit-scrollbar-thumb {
-    background-color: #176b1b;
+    background-color: var(--tb-barBG-color);
     border-radius: 3px;
     border: 1px solid #000000;
     height: 3px;
-}
-
-.generic-component::-webkit-scrollbar:vertical {
-    width: 5px;
-}
-
-.generic-component::-webkit-scrollbar:horizontal {
-    height: 5px;
 }
 
 .generic-component::-webkit-scrollbar-track {

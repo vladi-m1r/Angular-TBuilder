@@ -40,8 +40,6 @@
         </div>
     </nav>
     <div class="TB-Slide-friends">
-        <li class="TB-bar">Estado</li>
-        <li class="status">Connected</li>
         <li class="TB-bar" id="boton-equipos" (click)="showTeams()">Equipos</li>
         <div class="generic-component" [class.active]="isShowTeams">
             <app-equipos (response)="changeComponentView($event)"></app-equipos>
