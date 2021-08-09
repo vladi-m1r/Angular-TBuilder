@@ -22,12 +22,6 @@ export class MainComponent implements OnInit {
     let token:any;
     token = localStorage.getItem('currentUser');
 
-    this.perfil = {
-      'usuario': "",
-      'id_perfil': "",
-      'nickname': "Anonymous",
-    };
-
     console.log(this.perfil);
     this.servicio.loginWithToken(token).subscribe(
       data => {

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -6,15 +6,18 @@ import { DataService } from '../data.service';
   templateUrl: './equipos.component.html',
   styleUrls: ['./equipos.component.css']
 })
-export class EquiposComponent implements OnInit {
+export class EquiposComponent implements OnInit, OnChanges{
 
   @Output() response = new EventEmitter<string>();
-  @Input() profileID = 5;
-
+  @Input() profileID:any;
   teams:any;
 
   constructor(private service:DataService) {
     console.log(this.profileID);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.profileID = changes.profileID.currentValue;
     this.loadTeams();
   }
 

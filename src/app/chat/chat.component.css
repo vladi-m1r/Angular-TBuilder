@@ -24,8 +24,48 @@
 .Chat-Opciones{
     height: 100%;
     width: 9%;
+    display: flex;
+    flex-direction: column;
     background-color: var(--tb-second-color);
+    align-items: center;
+    padding-top: 10px;
 }
+
+.Chat-Opciones svg{
+    background-color: rgb(49, 46, 53);
+    width: auto;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.Chat-Opciones svg:hover{
+    background-color: rgb(84, 31, 191);
+}
+
+.button-image{
+    background-color: rgb(49, 46, 53);
+    width: auto;
+    height: 50px;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.button-image:hover{
+    background-color: rgb(84, 31, 191);
+}
+
+.button-image img{
+    height: 100%;
+    width: 100%;
+}
+
 
 .Chat-Content{
     position: relative;
