@@ -6,7 +6,7 @@
                 alt="">
             <li (click)="clickHome()">HOME</li>
             <li>JUEGOS</li>
-            <li>EQUIPOS</li>
+            <li (click)="clickEquipos()">EQUIPOS</li>
             <li>CLANES</li>
         </div>
         <div class="TB-nav-right">
@@ -62,6 +62,7 @@
         <app-home *ngSwitchCase="'Home'"></app-home>
         <app-chat *ngSwitchCase="'Chat'"></app-chat>
         <app-create-team *ngSwitchCase="'CreateTeam'"></app-create-team>
+        <app-equipos-view *ngSwitchCase="'EquiposView'"></app-equipos-view>
     </div>
     <div class="profile-config" [class.active]="isShow">
         <li>

@@ -91,4 +91,8 @@ export class MainComponent implements OnInit {
   clickHome(){
     this.selectedComponent = "Home";
   }
+
+  clickEquipos(){
+    this.selectedComponent = "EquiposView";
+  }
 }
