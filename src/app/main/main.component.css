@@ -94,7 +94,8 @@ img:hover{
     justify-items: center;
     font-family: 'Abel', sans-serif;
     font-size: 15px;
-    color: rgb(151, 214, 48);
+    font-weight: bold;
+    color: rgb(55, 207, 213);
     margin-right: 15px;
 }
 

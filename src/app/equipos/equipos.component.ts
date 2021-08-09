@@ -13,10 +13,12 @@ export class EquiposComponent implements OnInit {
 
   teams:any;
 
-  constructor(private service:DataService) { }
+  constructor(private service:DataService) {
+    console.log(this.profileID);
+    this.loadTeams();
+  }
 
   ngOnInit(): void {
-    this.loadTeams();
   }
 
   changeToCreateTeam(){

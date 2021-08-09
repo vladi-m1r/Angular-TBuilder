@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { DataService } from './data.service';
 
@@ -11,7 +12,6 @@ export class AppComponent {
 
   token:any;
 
-  constructor(private rutas:AppRoutingModule, private servicio:DataService){
-
+  constructor(private route: Router, private servicio:DataService){
   }
 }

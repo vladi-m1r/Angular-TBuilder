@@ -42,7 +42,7 @@
     <div class="TB-Slide-friends">
         <li class="TB-bar" id="boton-equipos" (click)="showTeams()">Equipos</li>
         <div class="generic-component" [class.active]="isShowTeams">
-            <app-equipos (response)="changeComponentView($event)"></app-equipos>
+            <app-equipos [profileID]="perfil.id" (response)="changeComponentView($event)"></app-equipos>
         </div>
         <li class="TB-bar" id="boton-clanes" (click)="showClans()">Clanes</li>
         <div class="generic-component" [class.active]="isShowClans">

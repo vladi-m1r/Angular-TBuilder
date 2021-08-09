@@ -29,4 +29,8 @@ export class DataService {
     return this.http.get(this.baseUrl + 'gameTeams/perfilesTeam/'+profileID+"/", {headers: this.httpHeaders});
   }
 
+  getTeams():Observable<any>{
+    return this.http.get(this.baseUrl + 'gameTeams/equipos/', {headers: this.httpHeaders});
+  }
+
 }
