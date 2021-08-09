@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { DataService } from '../data.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { DataService } from '../data.service';
 })
 export class EquiposViewComponent implements OnInit {
 
+  @Output() equipoSeleccionado = new EventEmitter<string>();
   teams:any;
 
   constructor(private service:DataService) { }
@@ -24,4 +25,7 @@ export class EquiposViewComponent implements OnInit {
     )
   }
 
+  clickEquipo(){
+    this.equipoSeleccionado.emit("EquipoProfile");
+  }
 }

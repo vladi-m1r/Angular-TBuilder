@@ -10,7 +10,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let team of teams">
+              <tr *ngFor="let team of teams" (click)="clickEquipo()">
                 <th scope="row">1</th>
                 <td>{{team.acronimo}}</td>
                 <td>{{team.nombre}}</td>

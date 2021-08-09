@@ -60,7 +60,8 @@
         <app-home *ngSwitchCase="'Home'"></app-home>
         <app-chat *ngSwitchCase="'Chat'"></app-chat>
         <app-create-team *ngSwitchCase="'CreateTeam'"></app-create-team>
-        <app-equipos-view *ngSwitchCase="'EquiposView'"></app-equipos-view>
+        <app-equipos-view  *ngSwitchCase="'EquiposView'" (equipoSeleccionado)="changeComponentView($event)"></app-equipos-view>
+        <app-main-equipo *ngSwitchCase="'EquipoProfile'"></app-main-equipo>
     </div>
     <div class="profile-config" [class.active]="isShow">
         <li>

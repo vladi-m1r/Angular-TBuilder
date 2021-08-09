@@ -17,6 +17,8 @@ import { ClanesComponent } from './clanes/clanes.component';
 import { HomeComponent } from './home/home.component';
 import { CreateTeamComponent } from './create-team/create-team.component';
 import { EquiposViewComponent } from './equipos-view/equipos-view.component';
+import { EquipoViewComponent } from './equipos/equipo-view/equipo-view.component';
+import { MainEquipoComponent } from './equipos/main-equipo/main-equipo.component';
 
 const routes: Routes = [
   { path: 'mainApp', component: MainComponent, canActivate: [AuthGuard]},
@@ -36,7 +38,9 @@ const routes: Routes = [
     ClanesComponent,
     HomeComponent,
     CreateTeamComponent,
-    EquiposViewComponent
+    EquiposViewComponent,
+    EquipoViewComponent,
+    MainEquipoComponent
   ],
   imports: [
     RouterModule.forRoot(routes),
