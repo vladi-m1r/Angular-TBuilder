@@ -198,7 +198,8 @@
     height: 100%;
     background-color: var(--tb-medium-color);
     position: relative;
-    overflow-y: visible;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .portada{
@@ -229,7 +230,7 @@
 }
 
 .minidetails{
-    width: 725px;
+    width: 635px;
     background-color: var(--tb-bar-color);
     padding: 7px;
     border-radius: 10px;
@@ -260,7 +261,7 @@
     background-color: var(--tb-bar-color);
     width: 250px;
     border-radius: 5px;
-
+    position: relative;
 }
 
 .adm-content{
@@ -286,4 +287,39 @@
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 24px;
+}
+
+.portrait{
+    background-color: blueviolet;
+    width: 100%;
+    height: 75px;
+}
+
+.adm-img{
+    top: 25px;
+    width: 65px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    padding: 2.5px;
+    overflow: hidden;
+    position: absolute;
+    background-color: var(--tb-medium-color);
+}
+
+.adm-img img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.adm-title{
+    margin-top: 14px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.adm-title h3{
+    margin-bottom: 0px;
+    font-size: 16px;
 }
