@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainEquipoComponent implements OnInit {
 
+  selectedComponent:string = "Profile";
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  changeComponentView(data:string){
+    this.selectedComponent = data;
+  }
 }

@@ -13,39 +13,7 @@
             <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
         </svg>
     </div>
-    <div class="Equipo-Profile">
-        <div class="portada">
-            <img src="https://images8.alphacoders.com/380/380531.jpg" alt="">
-        </div>
-        <div class="picture">
-            <img src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/rubick_arcana/finger_of_death.png" alt="">
-        </div>
-        <div class="minidetails">
-            <div class="md-tag">ELAD</div>
-            <div class="md-tamaño">55/31</div>
-            <div class="md-nacionalidad">PERU</div>
-            <div class="button-soli">Enviar Solicitud</div>
-        </div>
-
-        <div class="bodyProfile">
-            <div class="bp-left">
-                <div class="nombre">
-                    Black Ops Gaming
-                </div>
-            </div>
-            <div class="administrador">
-                <div class="portrait"></div>
-                <div class="adm-img">
-                    <img src="https://up.quizlet.com/1carcd-qGup4-256s.jpg" alt="">
-                </div>
-                <div class="adm-title">
-                    <h3>Rika Furude</h3>
-                    Administrador
-                </div>
-                <div class="adm-content"></div>
-                
-            </div>
-        </div>
-
+    <div class="generic-content" [ngSwitch]="selectedComponent">
+        <app-equipo-view *ngSwitchCase="'Profile'"></app-equipo-view>
     </div>
 </div>
